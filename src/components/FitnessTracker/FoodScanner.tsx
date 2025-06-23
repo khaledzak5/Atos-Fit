@@ -55,8 +55,8 @@ const FoodScanner = ({ className = "" }) => {
       const base64Image = await toBase64(image);
 
       // Gemini API endpoint and key (replace with your own if needed)
-      const GEMINI_API_KEY = "AIzaSyDLVpZU80CE4XURZNcUBCbblO0d4uh0JQ4"; // IMPORTANT: Consider moving this key to environment variables for security
-      const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-04-17:generateContent?key=${GEMINI_API_KEY}`;
+      const GEMINI_API_KEY = ""; // IMPORTANT: Consider moving this key to environment variables for security
+      const GEMINI_API_URL = ``;
       // Prompt Gemini to identify food and estimate calories
       let promptText = "Identify the food in this image and estimate the calories. Respond in JSON with keys 'food' and 'calories'.";
       if (weight) {
